@@ -31,8 +31,8 @@ Retreive weather information
         console.log(response);
 
     //     // Transfer content to HTML
-    //     $(".city").html("<h1>" + response.name + " Weather Details</h1>");
-    //     $(".wind").text("Wind Speed: " + response.wind.speed);
+        $(".city").html("<h1>" + response.name + " Weather Details</h1>");
+        $(".wind").text("Wind Speed: " + response.wind.speed);
     //     $(".humidity").text("Humidity: " + response.main.humidity);
     //     $(".temp").text("Temperature (F) " + response.main.temp);
 
