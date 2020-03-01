@@ -1,12 +1,3 @@
-/* Step 1:
-Get basic layout
-Step 2:
-Get Ajax to work
-Final step:
-Retreive weather information
-
-*/
-
 $(document).ready(function() {
   $("#search-button").on("click", function() {
     var searchValue = $("#search-value").val();
@@ -16,13 +7,14 @@ $(document).ready(function() {
   });
 
   function searchWeather(submitValue) {
-    var city = "London";
+    // var city = "London";
     //API key
+
     var APIKey = "0289f29709713810c4707b907c06cb71";
 
     var queryURL =
       "https://api.openweathermap.org/data/2.5/weather?q=" +
-      city +
+      submitValue +
       ",us&appid=" +
       APIKey;
 
