@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Weather Application</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="city"></div>
-        <div class="date"></div>
-        <div class="temperature"></div>
-        <div class="humidity"></div>
-        <div class="wind speed"></div>
-        <div class="UV index"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="script.js"></script>
-        <script type="text/javascript">
 
-    
+    <style>
+        .heading {
+            text-align: center;
+        }
+        .search {
+            width: 30%;
+            background-color: lightblue;
+        }
+    </style>
 
-        </script>
+    <div class="heading jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Weather Dashboard</h1>
+        </div>
     </div>
-    
+
+    <!-- <h1>Weather Dashboard</h1> -->
+
+    <div class="search card">
+        <div class="card-body">Search for a city:</div>
+        <form>
+            <div class="form-group">
+                <div class="col">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="card-deck">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="city"></div>
+                    <div class="city"></div>
+                    <div class="date"></div>
+                    <div class="temperature"></div>
+                    <div class="humidity"></div>
+                    <div class="wind speed"></div>
+                    <div class="UV index"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    </script>
+
+
 </body>
+
 </html>
